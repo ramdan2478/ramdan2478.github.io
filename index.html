@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome visitor!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        background: rgb(0,147,255);
+        background: linear-gradient(90deg, rgba(0,147,255,1) 0%, rgba(0,174,228,1) 39%, rgba(0,212,255,1) 87%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!-- <a class="navbar-item" href="https://bulma.io/">
+            Home
+          </a> -->
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <!-- <p class="control">
+                <a class="navbar-item" href="#">
+                  About
+                </a>
+              </p>
+              <p class="control">
+                  <a class="navbar-item" href="#">
+                  Works
+                </a>
+              </p>
+              <p class="control">
+                  <a class="navbar-item" href="#">
+                  Contact
+                </a>
+              </p> -->
+              <!-- <p class="control">
+                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>
+                    Tweet
+                  </span>
+                </a>
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-fullheight-with-navbar">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title is-1 has-text-white">
+                Hello there. I am a software engineer from Serang, Indonesia. Love working on web technologies like Codeigniter, Laravel and Bulma CSS, and also a little bit of photograph,videography and avid music listener.
+            </h1>
+            <p class="subtitle is-4 has-text-white">
+              Get in touch via email at muhamadramdan@pm.me or visit the contact page for more information.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+          <div class="content has-text-centered">
+            <p>
+              Made with <a href="http://bulma.io"><strong>Bulma</strong></a>, Hosted on <a href="http://github.io"><strong>Github</strong></a>.
+               Source code licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT License</a>.
+            </p>
+          </div>
+        </footer>
+
+  <script type="text/javascript">
+  //Burger menu mobile
+    document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+  </script>
+</body>
+</html>
